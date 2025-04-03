@@ -4,6 +4,7 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 import HeroSection from './Components/HeroSection';
 import Highlights from './Components/Highlights';
+// import Reservations from './Components/Reservations';
 import Testimonials from './Components/Testimonials';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Highlights />
         <Testimonials />
         <About />
+        {/* <Reservations /> */}
       </main>
       <Footer />
     </>

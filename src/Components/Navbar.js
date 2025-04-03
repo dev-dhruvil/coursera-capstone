@@ -41,8 +41,8 @@ export default function Navbar() {
         return (
             navLIst.map((item, key) => {
                 return (
-                    <li key={key}>
-                        <Link onClick={toggleDrawer} replace={true} to={item['url']}>{item['name']}</Link>
+                    <li key={key} className='lg:hover:scale-125'>
+                        <Link onClick={toggleDrawer} className='lg:hover:underline' replace={true} to={item['url']}>{item['name']}</Link>
                     </li>
                 )
             })

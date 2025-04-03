@@ -1,8 +1,10 @@
 import React from 'react';
 import restrauntFood from '../Assets/restauranfood.jpg';
 import Button from './Button';
+import { useNavigate } from 'react-router-dom';
 
 export default function HeroSection() {
+    const navigate = useNavigate();
     return (
         <>
             <div className='h-[55vh] lg:h-[85vh] bg-primary_first'>
@@ -15,7 +17,7 @@ export default function HeroSection() {
                                 <h2 className='my-4 text-white subtitle text-3xl'>Chicago</h2>
                                 <span className='my-4 text-white description text-justify text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit praesentium pariatur nam nobis quaerat officiis voluptatibus eum! Molestiae harum praesentium quis qui nesciunt est facilis eos, cupiditate distinctio quo illum.</span>
                             </div>
-                            <Button>
+                            <Button handleOnClick={() => navigate('/reservations')}>
                                 Reservations
                             </Button>
                         </div>

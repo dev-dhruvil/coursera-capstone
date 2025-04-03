@@ -47,8 +47,8 @@ export default function Reservations() {
                                     <label className='font-semibold' htmlFor="dtTime">Date & Time</label>
                                     <input className='p-3 rounded-lg' type="datetime-local" id='dtTime' name='dtTime' required />
                                 </div>
-                                <div className="reserveBtnDiv grid mt-2 rounded-lg bg-highlight_second">
-                                    <button className='p-3 text-highlight_first' type="submit">Reserve</button>
+                                <div className="reserveBtnDiv grid mt-2 rounded-lg bg-highlight_second hover:scale-95">
+                                    <button className='p-3 text-highlight_first hover:text-secondary_second' type="submit">Reserve</button>
                                 </div>
                             </form>
                         </div>
